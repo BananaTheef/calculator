@@ -1,0 +1,115 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+  height: 100%;
+	box-sizing: border-box;
+	background-color: coral;
+}
+
+.main-container {
+	height: 80%;
+	max-width: 35%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	gap: 1px;
+}
+
+.primary-header {
+	height: 15%;
+	text-align: center;
+}
+
+h1 {
+	padding-top: 20px;
+	margin: auto;
+	font-size: 4.5em;
+	color: royalblue;
+	font-family: Helvetica, sans-serif;
+}
+
+.btn {
+	color: royalblue;
+	font-family: Helvetica, sans-serif;
+	font-size: 5.5em;
+	padding-top: 10px;
+}
+
+.display {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	text-align: right;
+	color: white;
+	font-size: 6em;
+	max-width: 576px;
+	overflow: scroll;
+}
+
+.clear {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	font-size: 4em;
+}
+
+.zero {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.undo {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	color: royalblue;
+	font-family: Helvetica, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	padding-top: 10px;
+}
