@@ -50,17 +50,18 @@ table {
 html, body {
   height: 100%;
 	box-sizing: border-box;
-	background-color: coral;
+	background-color: #2D4262;
 }
 
 .main-container {
-	height: 80%;
-	max-width: 35%;
+	height: 650px;
+	max-width: 440px;
 	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(6, 1fr);
-	gap: 1px;
+	gap: 10px;
+	text-align: center;
 }
 
 .primary-header {
@@ -72,44 +73,87 @@ h1 {
 	padding-top: 20px;
 	margin: auto;
 	font-size: 4.5em;
-	color: royalblue;
+	color: #FFFFFF;
 	font-family: Helvetica, sans-serif;
 }
 
 .btn {
-	color: royalblue;
+	border: 0px;
+	border-radius: 100px;
+	background-color: /*#752424;*/
+	color: #FFFFFF;
 	font-family: Helvetica, sans-serif;
-	font-size: 5.5em;
-	padding-top: 10px;
+	font-size: 2em;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	max-height: 100px;
+	max-width: 100px;
 }
 
-.display {
+.displayContainer {
 	grid-column-start: 1;
 	grid-column-end: 5;
 	text-align: right;
+	background-color: white;
+	border-radius: 50px;
+	color: black;
+	font-size: 4.8em;
+	overflow: scroll;
+	max-height: 80px;
+	max-width: 480px;
+}
+
+.display {
+	/*grid-column-start: 1;
+	grid-column-end: 5;
+	text-align: right;
+	background-color: black;
+	border-radius: 50px;
 	color: white;
 	font-size: 6em;
-	max-width: 576px;
-	overflow: scroll;
+	overflow: scroll;*/
+	margin: auto;
+	max-width: 450px;
+	padding-top: 15px;
 }
 
 .clear {
 	grid-column-start: 3;
 	grid-column-end: 4;
-	font-size: 4em;
+	font-size: 2em;
 }
 
 .zero {
 	grid-column-start: 1;
 	grid-column-end: 3;
+	max-width: 225px;
 }
 
 .undo {
 	grid-column-start: 1;
 	grid-column-end: 3;
-	color: royalblue;
+	border-radius: 50px;
+	border: 0px;
+	background-color: #752424;
+	color: #FFFFFF;
 	font-family: Helvetica, sans-serif;
-	font-size: 3em;
-	font-weight: bold;
-	padding-top: 10px;
+	font-size: 2em;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.plus, .minus, .multiply, .divide, .equal {
+	background-color: #D09683;
+	color: white;
+}
+
+.undo, .clear {
+	background-color: #73605B;
+	color: white;
+}
+
+.digit {
+	background-color: #363237;
+	color: white;
 }

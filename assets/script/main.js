@@ -164,8 +164,9 @@ function readUserInput()
   }
 }
 
+
 // Keyboard Support
-window.addEventListener('keydown', keyboardInput);
+/*window.addEventListener('keydown', keyboardInput);
 
 function keyboardInput()
 {
@@ -178,7 +179,7 @@ function keyboardInput()
     flagPeriod = 1;
   }
 
-  else if (/*reset === 1 ||*/ userInput === clearSign)
+  else if (/*reset === 1 || userInput === clearSign)
   {
     resetCalculator();
   }
@@ -221,4 +222,4 @@ function keyboardInput()
   {
     display.textContent += userInput;
   }
-}
+}*/
